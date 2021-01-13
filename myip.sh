@@ -5,7 +5,7 @@
 # (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
 # пишет вывод (2 символа) который можно выводить в панель xfce, для мониторинга вашего айпи, в элемент 'общий монитор',
-# добавив команду 'sh [/путь-к-скрипту/./myip_countrycode.sh]',
+# добавив команду 'sh [/путь-к-скрипту/./myip.sh]',
 # и обязательно выставить интервал обновления элемента 'общий монитор', не менее 60 секунд,
 # иначе wtfismyip.com может забанить запросы от вашего IP, согласно регламенту автоматизации сервиса:
 
@@ -13,7 +13,9 @@
 # Any usage in excess of this may lead to a temporary block."
 # (https://wtfismyip.com/automation )
 
-# требует: ping, curl, whois, awk, использование: 'chmod +x myip_countrycode.sh; ./myip_countrycode.sh'
+# требует: ping, curl, whois, awk,
+# использование: сделать скртипт исполняемым: 'chmod +x myip
+# и запустить: ./myip.sh'
 
 MYIP=https://wtfismyip.com/text
 PING_URL=t.me
