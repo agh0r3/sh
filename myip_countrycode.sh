@@ -1,6 +1,6 @@
 #!/bin/sh
 # myip_countrycode.sh,
-# v1.2 #agh0r3@proton mail.com,
+# v1.1 #agh0r3@proton mail.com,
 # скрипт возвращает ISO 3166-2 код страны, ip адреса машины, на которой запущен,
 # (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 # пишет вывод (2 символа) в файл '.ip', и возвращает вывод который можно выводить в панель xfce, в элемент 'общий монитор',
@@ -18,13 +18,11 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 # this url return your ip to you:
 MYIP=https://wtfismyip.com/text
-# NordVPN site
-#NORD=https://nordvpn.com/
 
 # do NOT use decimal ip in PING_URL, only domain names, to avoid sript lag.
 # if network down, ping MUST return 'name resolution error', then not touch variable,
 # to avoid next 'if' fork breakdown.
-PING_URL=amazon.com
+PING_URL=t.me
 FILE=$DIR/.ip
 
 echo %% > $FILE
@@ -36,7 +34,7 @@ if [[ "$PING" ]]; then
         COUNTRY=$(curl $MYIP --silent | xargs whois | awk '/country:/{print $NF; exit}')
         if [[ $COUNTRY != $CURRENT ]]; then
                 CURRENT=$COUNTRY
-                echo $CURRENT >$FILE; # echo $VPNSTATUS >$FILE
+                echo $CURRENT >$FILE;
                 echo $COUNTRY
         else
                 echo $CURRENT
