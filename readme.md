@@ -1,4 +1,4 @@
-# myip_countrycode.sh, v1.1 #agh0r3@proton mail.com,
+ myip_countrycode.sh, v1.1 #agh0r3@proton mail.com,
 # скрипт возвращает ISO 3166-2 код страны, ip адреса машины, на которой запущен,
 # ( https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements )
 # пишет вывод (2 символа) в файл '.ip', и в терминал. можно выводить в панель xfce, в элемент 'общий монитор',
