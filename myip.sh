@@ -1,7 +1,7 @@
 #!/bin/sh
 # myip.sh,
 # v1.2 # by pigiy
-# the script do request to wtfismyip.com service, returns ISO 3166-2 country code, ip address of the machine on which it is running,
+# This script makes request to wtfismyip.com service, returns ISO 3166-2 country code, ip address of the machine on which it is running,
 # (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
 # script returns output (2 characters) that can be added to the xfce panel, for monitoring your ip address country when you connected over vpn.
