@@ -1,7 +1,7 @@
 #!/bin/sh
 # myip_countrycode.sh,
 # v1.1 # by pingiy
-# that script returns ISO 3166-2 country code, ip address of the machine it is running on,
+# This script makes request to wtfismyip.com service, returns ISO 3166-2 country code, ip address of the machine on which it is running,
 # (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 # writes output (2 characters) to '.ip' file, and returns output that can be added to the xfce panel, to the 'shared monitor' element,
 # by adding the command 'sh [/path-to-script/./myip_countrycode.sh]',
