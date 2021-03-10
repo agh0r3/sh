@@ -1,18 +1,18 @@
 #!/bin/sh
 # myip_countrycode.sh,
-# v1.1 #agh0r3@proton mail.com,
-# скрипт возвращает ISO 3166-2 код страны, ip адреса машины, на которой запущен,
+# v1.1 # by pingiy
+# that script returns ISO 3166-2 country code, ip address of the machine it is running on,
 # (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
-# пишет вывод (2 символа) в файл '.ip', и возвращает вывод который можно выводить в панель xfce, в элемент 'общий монитор',
-# добавив команду 'sh [/путь-к-скрипту/./myip_countrycode.sh]',
-# и обязательно выставить интервал обновления элемента 'общий монитор', не менее 60 секунд,
-# иначе wtfismyip.com может забанить ваш IP, согласно регламенту автоматизации сервиса:
+# writes output (2 characters) to '.ip' file, and returns output that can be added to the xfce panel, to the 'shared monitor' element,
+# by adding the command 'sh [/path-to-script/./myip_countrycode.sh]',
+# and be sure to set the refresh interval for the 'shared monitor' element, at least 60 seconds,
+# otherwise wtfismyip.com can ban your IP, according to the service automation regulations:
 
 # "All we ask is that you limit usage to 1 request per minute, per IP address.
-# Any usage in excess of this may lead to a temporary block."
-# (https://wtfismyip.com/automation )
+# Any usage in excess of this may lead to a temporary block. "
+# (https://wtfismyip.com/automation)
 
-# требует: ping, curl, whois, awk, использование: 'chmod +x myip_countrycode.sh; ./myip_countrycode.sh'
+# requires: ping, curl, whois, awk, usage: 'chmod + x myip_countrycode.sh; ./myip_countrycode.sh '
 
 # script path detection, to avoid summon orphaned files in random dir, from where you throw command:
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
