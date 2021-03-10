@@ -1,15 +1,16 @@
-
-# myip_countrycode.sh,
-v1.1 #agh0r3@proton mail.com,
-скрипт возвращает ISO 3166-2 код страны, ip адреса машины, на которой запущен,
+# myip.sh
+this script do request to wtfismyip.com service, returns ISO 3166-2 ip address country code of the machine on which it is running,
 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
-пишет вывод (2 символа) в файл '.ip', который можно выводить в панель xfce, в элемент 'общий монитор',
-добавив команду 'sh [/путь-к-скрипту/./myip_countrycode.sh]',
-и обязательно выставить интервал обновления элемента 'общий монитор', не менее 60 секунд,
-иначе wtfismyip.com может забанить ваш IP, согласно регламенту атоматизации сервиса:
+
+script returns output (2 characters) that can be added to the xfce panel, for monitoring your ip address country when you connected over vpn.
+adding the command 'sh [/path-to-script/./myip.sh]', to the 'shared monitor' element in xfce panel.
+and be sure to set the refresh interval for the 'shared monitor' element, at least 60 seconds,
+otherwise wtfismyip.com can ban requests from your IP, according to the service automation regulations:
 
 "All we ask is that you limit usage to 1 request per minute, per IP address.
-Any usage in excess of this may lead to a temporary block."
-(https://wtfismyip.com/automation )
+Any usage in excess of this may lead to a temporary block. "
+(https://wtfismyip.com/automation)
 
-требует: ping, curl, whois, awk, sed использование: 'chmod +x myip_countrycode.sh; ./myip_countrycode.sh'
+requires: ping, curl, whois, awk,
+usage: make script executable: 'chmod + x myip.sh
+and run: ./myip.sh '
