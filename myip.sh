@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # myip.sh,
 # v1.2 # by pigiy
 # This script makes request to wtfismyip.com service, returns ISO 3166-2 country code, ip address of the machine on which it is running,
