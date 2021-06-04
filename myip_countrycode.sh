@@ -12,7 +12,8 @@
 # Any usage in excess of this may lead to a temporary block. "
 # (https://wtfismyip.com/automation)
 
-# requires: ping, curl, whois, awk, usage: 'chmod + x myip_countrycode.sh; ./myip_countrycode.sh '
+# requirements: ping, curl, whois, awk, xfce4-panel, xce4-genmon-plugin.
+# usage: 'chmod + x myip_countrycode.sh; ./myip_countrycode.sh '
 
 # script path detection, to avoid summon orphaned files in random dir, from where you throw command:
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
