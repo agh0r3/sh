@@ -13,7 +13,7 @@
 # Any usage in excess of this may lead to a temporary block. "
 # (https://wtfismyip.com/automation)
 
-# requires: ping, curl, whois, awk,
+# requirements: ping, curl, whois, awk, xfce4-panel, xce4-genmon-plugin
 # usage: make script executable: 'chmod + x myip.sh
 # and run: ./myip.sh '
 
